@@ -1,7 +1,7 @@
 # Bonus zadatak 2 - Nikola Lukic
 
 ## Production url:
-- still to be added -
+        https://bonus-zadatak-2-eta.vercel.app/
 
 ---
 

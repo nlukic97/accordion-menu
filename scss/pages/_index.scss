@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-soft-violet; //fallback
+    background: linear-gradient($color-soft-violet, $color-soft-blue);
+}
+
+.card {
+    width: 60vw;
+    height: 70vh;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-white;
+    border-radius: 30px;
+
+    .half-1 {
+        flex: 1;
+        background: 
+            url('../images/illustration-woman-online-desktop.svg') no-repeat center left -80px,
+            url('../images/bg-pattern-desktop.svg') no-repeat top -210px left -570px,
+        ;
+    }
+    
+    .half-2 {
+        flex: 1;
+    }
+}
