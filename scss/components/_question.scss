@@ -1,0 +1,24 @@
+.questions {
+    padding: 0 20% 0 0;
+
+    .question-component {
+        border-bottom: 1px solid $color-gray;
+        padding: 1rem 0;
+
+        div {
+            .question-text {
+                // color: red;
+            }
+
+            .btn {
+                float: right;
+            }
+        }
+
+        .answer {
+            // padding: 1rem 0;
+            overflow: hidden;
+            height:0;
+        }
+    }
+}
