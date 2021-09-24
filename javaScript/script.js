@@ -1,11 +1,24 @@
-document.querySelectorAll('.questions .question-component .clickable-container').forEach(btn=>{
-    btn.addEventListener('click',()=>{
+document.querySelectorAll('.questions .question-component .clickable-container').forEach(question=>{
 
-        // let answerDiv = btn.parentElement.parentElement.querySelector('.answer')
-        let element = btn.closest('.question-component')
+    //listener for click on question
+    question.addEventListener('click',()=>{
+
+        let element = question.closest('.question-component')
         toggleVisibility(element)
     })
+
+    // listener for :hover on question
+    let box = document.querySelector('.card .half-1 .box')
+    question.addEventListener('mouseover',()=>{
+        box.classList.add('question-hover')
+    })
+
+    question.addEventListener('mouseout',()=>{
+        box.classList.remove('question-hover')
+    })
 })
+
+
 
 const toggleVisibility = (el) =>{
     let answerDiv = el.querySelector('.answer')

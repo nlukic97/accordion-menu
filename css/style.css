@@ -12,6 +12,9 @@
 .questions .question-component .clickable-container:hover .question-text {
   color: #f47c57;
 }
+.questions .question-component .clickable-container:hover .btn {
+  cursor: pointer;
+}
 .questions .question-component .clickable-container .question-text {
   font-weight: normal;
 }
@@ -62,6 +65,17 @@ body {
   flex: 1;
   background: url("../images/illustration-woman-online-desktop.svg") no-repeat 100% center, url("../images/bg-pattern-desktop.svg") no-repeat 100% 70%;
   background-size: 120%, 270%;
+  position: relative;
+}
+.card .half-1 .box {
+  width: 45%;
+  position: absolute;
+  top: 43%;
+  left: -22%;
+  transition: left 0.4s;
+}
+.card .half-1 .box.question-hover {
+  left: -30%;
 }
 .card .half-2 {
   flex: 1;

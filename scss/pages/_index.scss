@@ -24,8 +24,20 @@ body {
         background: 
             url('../images/illustration-woman-online-desktop.svg') no-repeat 100% center,
             url('../images/bg-pattern-desktop.svg') no-repeat 100% 70%;
-            ;
-            background-size: 120%,270%;
+        background-size: 120%,270%;
+        position: relative;
+
+        .box {
+            width: 45%;
+            position: absolute;
+            top:43%;
+            left:-22%;
+            // border: 1px solid orange;
+            transition: left .4s;
+            &.question-hover {
+                left:-30%;
+            }
+        } 
     }
     
     .half-2 {
