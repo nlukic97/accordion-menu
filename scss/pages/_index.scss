@@ -1,8 +1,13 @@
+:root {
+    font-size: 12px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: $color-soft-violet; //fallback
     background: linear-gradient($color-soft-violet, $color-soft-blue);
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card {
@@ -23,5 +28,6 @@ body {
     
     .half-2 {
         flex: 1;
+        padding: 30px 10% 0 5%;
     }
 }

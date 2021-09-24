@@ -1,40 +1,49 @@
 .questions {
-    padding: 0 20% 0 0;
-
     .question-component {
+        border-bottom: 1px solid $color-gray;
 
-        div {
+        .clickable-container {
             display: flex;
             justify-content: space-between;
+            padding: 1rem 0;
 
             .question-text {
                 font-weight: normal;
+
                 &:hover {
-                    color:$color-orange;
+                    color:$color-soft-red;
                 }
             }
 
             .btn {
                 width: 10px;
-                background: url('../../images/icon-arrow-down.svg') no-repeat center center/cover;
+                background: url('../../images/icon-arrow-down.svg') no-repeat center center;
                 border: none;
+                transform: rotate(0deg);
+                transition: all .4s;
             }
         }
 
         .answer {
             overflow: hidden;
             max-height:0;
-            border-bottom: 1px solid $color-gray;
             transition: all .4s;
         }
 
         &.active {
-            .question-text {
-                font-weight: bold;
+
+            .clickable-container {
+                .question-text {
+                    font-weight: bold;
+                }
+
+                .btn {
+                    transform: rotate(180deg);
+                }
             }
 
             .answer {
-                padding: 0.5rem 0;
+                padding-bottom: 1rem;
             }
         }
     }

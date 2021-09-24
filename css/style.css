@@ -1,32 +1,41 @@
-.questions {
-  padding: 0 20% 0 0;
+.questions .question-component {
+  border-bottom: 1px solid #e7e7e9;
 }
-.questions .question-component div {
+.questions .question-component .clickable-container {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0;
 }
-.questions .question-component div .question-text {
+.questions .question-component .clickable-container .question-text {
   font-weight: normal;
 }
-.questions .question-component div .question-text:hover {
-  color: #ffa600;
+.questions .question-component .clickable-container .question-text:hover {
+  color: #f47c57;
 }
-.questions .question-component div .btn {
+.questions .question-component .clickable-container .btn {
   width: 10px;
-  background: url("../../images/icon-arrow-down.svg") no-repeat center center/cover;
+  background: url("../../images/icon-arrow-down.svg") no-repeat center center;
   border: none;
+  transform: rotate(0deg);
+  transition: all 0.4s;
 }
 .questions .question-component .answer {
   overflow: hidden;
   max-height: 0;
-  border-bottom: 1px solid #e7e7e9;
   transition: all 0.4s;
 }
-.questions .question-component.active .question-text {
+.questions .question-component.active .clickable-container .question-text {
   font-weight: bold;
 }
+.questions .question-component.active .clickable-container .btn {
+  transform: rotate(180deg);
+}
 .questions .question-component.active .answer {
-  padding: 0.5rem 0;
+  padding-bottom: 1rem;
+}
+
+:root {
+  font-size: 12px;
 }
 
 body {
@@ -34,6 +43,7 @@ body {
   padding: 0;
   background-color: #af67e9;
   background: linear-gradient(#af67e9, #6565e7);
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .card {
@@ -51,6 +61,7 @@ body {
 }
 .card .half-2 {
   flex: 1;
+  padding: 30px 10% 0 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
