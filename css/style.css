@@ -1,22 +1,30 @@
 .questions {
   padding: 0 20% 0 0;
 }
+.questions .question-component div {
+  display: flex;
+  justify-content: space-between;
+}
+.questions .question-component div .question-text {
+  font-weight: normal;
+}
+.questions .question-component div .question-text:hover {
+  color: #ffa600;
+}
 .questions .question-component div .btn {
-  float: right;
+  width: 10px;
+  background: url("../../images/icon-arrow-down.svg") no-repeat center center/cover;
+  border: none;
 }
 .questions .question-component .answer {
   overflow: hidden;
-  height: 0;
-  transform: scaleY(0);
-  box-sizing: border-box;
-  padding: 0.5rem 0;
+  max-height: 0;
   border-bottom: 1px solid #e7e7e9;
+  transition: all 0.4s;
 }
-.questions .question-component .answer.shown {
-  height: auto;
-  transform: scaleY(1);
+.questions .question-component.active .question-text {
+  font-weight: bold;
 }
-
 body {
   margin: 0;
   padding: 0;

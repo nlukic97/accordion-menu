@@ -1,21 +1,20 @@
-document.querySelectorAll('.questions .question-component div .btn').forEach(btn=>{
+document.querySelectorAll('.questions .question-component .clickable-container').forEach(btn=>{
     btn.addEventListener('click',()=>{
-        // closeOpenQuestions()
 
-        let answer = btn.parentElement.parentElement.querySelector('.answer')
-        toggleClass(answer,'shown')
+        // let answerDiv = btn.parentElement.parentElement.querySelector('.answer')
+        let element = btn.closest('.question-component')
+        toggleVisibility(element)
     })
 })
 
-const closeOpenQuestions = () =>{
-    document.querySelectorAll('.answer').forEach(el=>{
-        if(el.classList.value.includes('shown')){
-            el.classList.remove('shown')
-        }
-    })
-}
-
-//toggle the visibility of the class
-const toggleClass = function(element,className){
-    element.classList.toggle(className);
+const toggleVisibility = (el) =>{
+    let answerDiv = el.querySelector('.answer')
+    
+    if (answerDiv.style.maxHeight) {
+        el.classList.remove('active');
+        answerDiv.style.maxHeight = null;
+    } else {
+        el.classList.add('active');
+        answerDiv.style.maxHeight = answerDiv.scrollHeight + "px";
+    } 
 }

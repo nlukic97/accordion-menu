@@ -4,29 +4,37 @@
     .question-component {
 
         div {
+            display: flex;
+            justify-content: space-between;
+
             .question-text {
-                // color: red;
+                font-weight: normal;
+                &:hover {
+                    color:$color-orange;
+                }
             }
 
             .btn {
-                float: right;
+                width: 10px;
+                background: url('../../images/icon-arrow-down.svg') no-repeat center center/cover;
+                border: none;
             }
         }
 
         .answer {
             overflow: hidden;
-            height:0;
-            transform: scaleY(0);
-            box-sizing: border-box;
-            // border: 1px solid red;
-            padding: 0.5rem 0;
+            max-height:0;
             border-bottom: 1px solid $color-gray;
+            transition: all .4s;
+        }
 
-            // transition: all 0.3s;
-            
-            &.shown {
-                height: auto;
-                transform: scaleY(1);
+        &.active {
+            .question-text {
+                font-weight: bold;
+            }
+
+            .answer {
+                // padding: 0.5rem 0;
             }
         }
     }
