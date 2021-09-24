@@ -1,16 +1,20 @@
 .questions {
   padding: 0 20% 0 0;
 }
-.questions .question-component {
-  border-bottom: 1px solid #e7e7e9;
-  padding: 1rem 0;
-}
 .questions .question-component div .btn {
   float: right;
 }
 .questions .question-component .answer {
   overflow: hidden;
   height: 0;
+  transform: scaleY(0);
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e7e7e9;
+}
+.questions .question-component .answer.shown {
+  height: auto;
+  transform: scaleY(1);
 }
 
 body {

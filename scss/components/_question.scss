@@ -2,8 +2,6 @@
     padding: 0 20% 0 0;
 
     .question-component {
-        border-bottom: 1px solid $color-gray;
-        padding: 1rem 0;
 
         div {
             .question-text {
@@ -16,9 +14,20 @@
         }
 
         .answer {
-            // padding: 1rem 0;
             overflow: hidden;
             height:0;
+            transform: scaleY(0);
+            box-sizing: border-box;
+            // border: 1px solid red;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid $color-gray;
+
+            // transition: all 0.3s;
+            
+            &.shown {
+                height: auto;
+                transform: scaleY(1);
+            }
         }
     }
 }
