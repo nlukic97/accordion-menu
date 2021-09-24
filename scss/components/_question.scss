@@ -6,13 +6,16 @@
             display: flex;
             justify-content: space-between;
             padding: 1rem 0;
+            &:hover {
+                cursor: pointer;
+
+                .question-text {
+                    color:$color-soft-red;
+                }
+            }
 
             .question-text {
                 font-weight: normal;
-
-                &:hover {
-                    color:$color-soft-red;
-                }
             }
 
             .btn {
