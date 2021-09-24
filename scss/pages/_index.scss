@@ -2,18 +2,31 @@
     font-size: 12px;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: $color-soft-violet; //fallback
     background: linear-gradient($color-soft-violet, $color-soft-blue);
     font-family: 'Kumbh Sans', sans-serif;
+    color: $color-dark-blue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .card {
-    width: 60vw;
-    min-height: 70vh;
-    margin: 15vh auto;
+    // min-height: 60vh;
+    min-height:380px;
+    
+    // width: 60vw;
+    // width: 700px;
+    max-width: 700px;
+    
+    margin: 15vh auto 0;
     display: flex;
     justify-content: space-around;
     background-color: $color-white;

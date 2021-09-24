@@ -29,6 +29,7 @@
   overflow: hidden;
   max-height: 0;
   transition: all 0.4s;
+  color: #4a4b5e;
 }
 .questions .question-component.active .clickable-container .question-text {
   font-weight: bold;
@@ -44,18 +45,26 @@
   font-size: 12px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #af67e9;
   background: linear-gradient(#af67e9, #6565e7);
   font-family: "Kumbh Sans", sans-serif;
+  color: #1d1e35;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card {
-  width: 60vw;
-  min-height: 70vh;
-  margin: 15vh auto;
+  min-height: 380px;
+  max-width: 700px;
+  margin: 15vh auto 0;
   display: flex;
   justify-content: space-around;
   background-color: #fff;
