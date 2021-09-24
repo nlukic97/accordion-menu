@@ -25,6 +25,10 @@
 .questions .question-component.active .question-text {
   font-weight: bold;
 }
+.questions .question-component.active .answer {
+  padding: 0.5rem 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +38,7 @@ body {
 
 .card {
   width: 60vw;
-  height: 70vh;
+  min-height: 70vh;
   margin: 15vh auto;
   display: flex;
   justify-content: space-around;
