@@ -11,26 +11,26 @@
         margin: 15vh 20px 0;
         min-height: unset;
         max-width: none;
-
+        
         .half-1 {
-            background: none;
+            background: url('../../images/bg-pattern-mobile.svg') no-repeat top center/contain;
             position: static;
-            border: 1px solid red;
             flex: unset;
             height: 10%;
-            text-align: center;
-    
+            
             .box {
-                position: static;
-                top:unset;
-                left:unset;
-                margin-top: -10%;
-                // border: 1px solid orange;
+                display: none;
 
                 &.question-hover {
-                    top:-130%;
+                    top:unset;
                 }
             } 
+            
+            .box2 {
+                display: block;
+                margin: -28% 10% 10px;
+                width: 70%;
+            }
         }
         
         .half-2 {

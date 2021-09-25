@@ -47,6 +47,10 @@ body {
                 left:-30%;
             }
         } 
+
+        .box2 {
+            display: none;
+        }
     }
     
     .half-2 {
@@ -56,9 +60,13 @@ body {
         .questions {
             .question-component {
                 .clickable-container {
-                    .btn {
-                        margin: 0 0 0 15px;
+                    .question-text {
+                        padding-right: 15px;
                     }
+                }
+
+                .answer {
+                    padding-right: 15px;
                 }
             }
         }
