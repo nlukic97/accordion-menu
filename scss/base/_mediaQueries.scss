@@ -1,0 +1,44 @@
+@media screen and (max-width:835px){
+    .card {
+        margin: 15vh 60px;       
+    }
+}
+
+@media screen and (max-width:480px){
+    .card {
+        // background-color: purple;
+        flex-direction:column;
+        margin: 15vh 20px 0;
+        min-height: unset;
+        max-width: none;
+
+        .half-1 {
+            background: none;
+            position: static;
+            border: 1px solid red;
+            flex: unset;
+            height: 10%;
+            text-align: center;
+    
+            .box {
+                position: static;
+                top:unset;
+                left:unset;
+                margin-top: -10%;
+                // border: 1px solid orange;
+
+                &.question-hover {
+                    top:-130%;
+                }
+            } 
+        }
+        
+        .half-2 {
+            flex: unset;
+            padding: 0 10% 30px;
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
