@@ -26,6 +26,7 @@ body {
     justify-content: space-around;
     background-color: $color-white;
     border-radius: 30px;
+    box-shadow: 0 30px 20px hsl(238, 28%, 41%);
 
     .half-1 {
         flex: 1;
