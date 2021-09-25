@@ -1,9 +1,11 @@
+// tablet margins
 @media screen and (max-width:835px){
     .card {
         margin: 15vh 60px;       
     }
 }
 
+//mobile
 @media screen and (max-width:480px){
     .card {
         flex-direction:column;
