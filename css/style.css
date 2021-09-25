@@ -93,6 +93,9 @@ body {
   flex: 1;
   padding: 30px 10% 0 5%;
 }
+.card .half-2 .questions .question-component:last-child {
+  margin-bottom: 20px;
+}
 .card .half-2 .questions .question-component .clickable-container .question-text {
   padding-right: 15px;
 }
@@ -108,7 +111,7 @@ body {
 @media screen and (max-width: 480px) {
   .card {
     flex-direction: column;
-    margin: 15vh 20px 0;
+    margin: 20vh 20px 0;
     min-height: unset;
     max-width: none;
   }

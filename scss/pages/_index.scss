@@ -59,6 +59,10 @@ body {
 
         .questions {
             .question-component {
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+
                 .clickable-container {
                     .question-text {
                         padding-right: 15px;
