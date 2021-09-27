@@ -42,7 +42,7 @@
 }
 
 :root {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 html {
@@ -109,7 +109,7 @@ body {
     margin: 15vh 60px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .card {
     flex-direction: column;
     margin: 20vh 20px 0;
