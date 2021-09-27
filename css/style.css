@@ -95,7 +95,7 @@ body {
   padding: 30px 10% 0 5%;
 }
 .card .half-2 .questions .question-component:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .card .half-2 .questions .question-component .clickable-container .question-text {
   padding-right: 15px;
